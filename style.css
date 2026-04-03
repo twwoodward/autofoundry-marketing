@@ -756,6 +756,15 @@ main {
   max-width: 920px;
 }
 
+.pricing-page .hero-kicker {
+  max-width: 62ch;
+  line-height: 1.5;
+}
+
+.pricing-page .pricing-hero-art {
+  right: -340px;
+}
+
 .pricing-support-line {
   margin: 0.8rem 0 0;
   color: var(--muted);
@@ -841,6 +850,10 @@ main {
 @media (max-width: 760px) {
   .pricing-page .pricing-hero .hero-left {
     max-width: 100%;
+  }
+
+  .pricing-page .pricing-hero-art {
+    right: -760px;
   }
 }
 
