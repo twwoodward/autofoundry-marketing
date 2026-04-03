@@ -23,6 +23,9 @@ rsync_args=(
   --no-owner
   --no-group
   --exclude ".git/"
+  --exclude ".gitignore"
+  --exclude "README.md"
+  --exclude "deploy_marketing_site.sh"
   --exclude "*.bak-*"
   --exclude "*.psd"
 )
