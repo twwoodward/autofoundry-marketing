@@ -1,0 +1,2873 @@
+{
+  "generated_at": "2026-02-28T02:35:06.550913+00:00",
+  "project_root": "/home/tw/autofoundry/webapp",
+  "scanned_directory": "src",
+  "files_scanned": [
+    "src/App.css",
+    "src/App.jsx",
+    "src/App_working_2025-08-21.jsx",
+    "src/components/AgentConsole.jsx",
+    "src/components/ExecutionHistoryHarness.jsx",
+    "src/components/ExecutionHistoryPanel.jsx",
+    "src/components/IntegrationBar.jsx",
+    "src/components/IntegrationBar_working_2025-08-21.jsx",
+    "src/components/OperatorGrid.jsx",
+    "src/components/ProposalCards.jsx",
+    "src/components/ProposalCardsHarness.jsx",
+    "src/components/ProposalDrawerFetchHarness.jsx",
+    "src/index.css",
+    "src/layouts/AppShell.jsx",
+    "src/lib/api.js",
+    "src/lib/integrations.js",
+    "src/lib/secureFetch.js",
+    "src/main.jsx",
+    "src/pages/BrandGuidelines.jsx",
+    "src/pages/Connectors.jsx",
+    "src/pages/Settings.jsx",
+    "src/pages/Welcome.jsx",
+    "src/pages/_legacy/AgentConsole_legacy.jsx",
+    "src/pages/operators/ExecutiveAssistantDashboard.jsx",
+    "src/pages/operators/ExecutiveAssistantOnboarding.jsx"
+  ],
+  "styling_system": [
+    "Plain CSS (global styles in src/index.css + src/App.css)"
+  ],
+  "css_variables": [
+    {
+      "name": "--bg-overlay",
+      "value": "rgba(8, 12, 19, 0.64)",
+      "definition_refs": [
+        "src/index.css:7"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--border",
+      "value": "#2d3440",
+      "definition_refs": [
+        "src/index.css:14"
+      ],
+      "usage_count": 15
+    },
+    {
+      "name": "--border-hover",
+      "value": "#3c4658",
+      "definition_refs": [
+        "src/index.css:15"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--btn-bg",
+      "value": "#000",
+      "definition_refs": [
+        "src/index.css:32"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--btn-bg-hover",
+      "value": "#222",
+      "definition_refs": [
+        "src/index.css:33"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--btn-fg",
+      "value": "#fff",
+      "definition_refs": [
+        "src/index.css:31"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--danger",
+      "value": "#ff5d5d",
+      "definition_refs": [
+        "src/index.css:20"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--info",
+      "value": "#58b9ff",
+      "definition_refs": [
+        "src/index.css:21"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--panel-bg",
+      "value": "rgba(20, 24, 32, 0.92)",
+      "definition_refs": [
+        "src/index.css:8"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--primary",
+      "value": "#ff6a00",
+      "definition_refs": [
+        "src/index.css:16"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--primary-hover",
+      "value": "#ff8229",
+      "definition_refs": [
+        "src/index.css:17"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--radius-1",
+      "value": "8px",
+      "definition_refs": [
+        "src/index.css:22"
+      ],
+      "usage_count": 4
+    },
+    {
+      "name": "--radius-2",
+      "value": "12px",
+      "definition_refs": [
+        "src/index.css:23"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--radius-3",
+      "value": "16px",
+      "definition_refs": [
+        "src/index.css:24"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--space-1",
+      "value": "0.25rem",
+      "definition_refs": [
+        "src/index.css:25"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--space-2",
+      "value": "0.5rem",
+      "definition_refs": [
+        "src/index.css:26"
+      ],
+      "usage_count": 10
+    },
+    {
+      "name": "--space-3",
+      "value": "0.75rem",
+      "definition_refs": [
+        "src/index.css:27"
+      ],
+      "usage_count": 11
+    },
+    {
+      "name": "--space-4",
+      "value": "1rem",
+      "definition_refs": [
+        "src/index.css:28"
+      ],
+      "usage_count": 10
+    },
+    {
+      "name": "--space-5",
+      "value": "1.5rem",
+      "definition_refs": [
+        "src/index.css:29"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--space-6",
+      "value": "2rem",
+      "definition_refs": [
+        "src/index.css:30"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--success",
+      "value": "#32d17c",
+      "definition_refs": [
+        "src/index.css:18"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--surface-1",
+      "value": "rgba(20, 24, 32, 0.92)",
+      "definition_refs": [
+        "src/index.css:10"
+      ],
+      "usage_count": 0
+    },
+    {
+      "name": "--surface-2",
+      "value": "rgba(28, 32, 42, 0.98)",
+      "definition_refs": [
+        "src/index.css:11"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--text-light",
+      "value": "#f0f3f8",
+      "definition_refs": [
+        "src/index.css:5"
+      ],
+      "usage_count": 8
+    },
+    {
+      "name": "--text-muted",
+      "value": "#b0b8c2",
+      "definition_refs": [
+        "src/index.css:6"
+      ],
+      "usage_count": 4
+    },
+    {
+      "name": "--tile-bg",
+      "value": "rgba(28, 32, 42, 0.98)",
+      "definition_refs": [
+        "src/index.css:9"
+      ],
+      "usage_count": 2
+    },
+    {
+      "name": "--tile-border",
+      "value": "#2d3440",
+      "definition_refs": [
+        "src/index.css:12"
+      ],
+      "usage_count": 6
+    },
+    {
+      "name": "--tile-border-hover",
+      "value": "#3c4658",
+      "definition_refs": [
+        "src/index.css:13"
+      ],
+      "usage_count": 1
+    },
+    {
+      "name": "--warning",
+      "value": "#ffb020",
+      "definition_refs": [
+        "src/index.css:19"
+      ],
+      "usage_count": 1
+    }
+  ],
+  "colors": [
+    {
+      "value": "#2d3440",
+      "type": "hex",
+      "rgb": "rgb(45, 52, 64)",
+      "usage_count": 7,
+      "references": [
+        "src/App.css:160",
+        "src/App.css:181",
+        "src/App.css:194",
+        "src/App.css:266",
+        "src/App.css:337",
+        "src/index.css:12",
+        "src/index.css:14"
+      ]
+    },
+    {
+      "value": "#3c4658",
+      "type": "hex",
+      "rgb": "rgb(60, 70, 88)",
+      "usage_count": 4,
+      "references": [
+        "src/App.css:386",
+        "src/index.css:13",
+        "src/index.css:15",
+        "src/pages/BrandGuidelines.jsx:59"
+      ]
+    },
+    {
+      "value": "#ff6a00",
+      "type": "hex",
+      "rgb": "rgb(255, 106, 0)",
+      "usage_count": 3,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:12",
+        "src/components/IntegrationBar_working_2025-08-21.jsx:96",
+        "src/index.css:16"
+      ]
+    },
+    {
+      "value": "rgba(20, 24, 32, 0.92)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 3,
+      "references": [
+        "src/App.css:159",
+        "src/index.css:8",
+        "src/index.css:10"
+      ]
+    },
+    {
+      "value": "rgba(28, 32, 42, 0.98)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 3,
+      "references": [
+        "src/App.css:180",
+        "src/index.css:9",
+        "src/index.css:11"
+      ]
+    },
+    {
+      "value": "#b0b8c2",
+      "type": "hex",
+      "rgb": "rgb(176, 184, 194)",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:170",
+        "src/index.css:6"
+      ]
+    },
+    {
+      "value": "#b7c2d2",
+      "type": "hex",
+      "rgb": "rgb(183, 194, 210)",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:152",
+        "src/App.css:227"
+      ]
+    },
+    {
+      "value": "#ff8080",
+      "type": "hex",
+      "rgb": "rgb(255, 128, 128)",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:174",
+        "src/App.css:329"
+      ]
+    },
+    {
+      "value": "#fff",
+      "type": "hex",
+      "rgb": "rgb(255, 255, 255)",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:252",
+        "src/index.css:31"
+      ]
+    },
+    {
+      "value": "rgba(0,0,0,0.5)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 2,
+      "references": [
+        "src/index.css:123",
+        "src/index.css:161"
+      ]
+    },
+    {
+      "value": "rgba(24, 30, 40, 0.96)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:196",
+        "src/App.css:269"
+      ]
+    },
+    {
+      "value": "rgba(80, 93, 116, 0.26)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:150",
+        "src/App.css:225"
+      ]
+    },
+    {
+      "value": "rgba(80, 93, 116, 0.65)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 2,
+      "references": [
+        "src/App.css:151",
+        "src/App.css:226"
+      ]
+    },
+    {
+      "value": "#000",
+      "type": "hex",
+      "rgb": "rgb(0, 0, 0)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:32"
+      ]
+    },
+    {
+      "value": "#000000",
+      "type": "hex",
+      "rgb": "rgb(0, 0, 0)",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:68"
+      ]
+    },
+    {
+      "value": "#0f141a",
+      "type": "hex",
+      "rgb": "rgb(15, 20, 26)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:92"
+      ]
+    },
+    {
+      "value": "#10151a",
+      "type": "hex",
+      "rgb": "rgb(16, 21, 26)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:483"
+      ]
+    },
+    {
+      "value": "#111111",
+      "type": "hex",
+      "rgb": "rgb(17, 17, 17)",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:15"
+      ]
+    },
+    {
+      "value": "#1a1e27",
+      "type": "hex",
+      "rgb": "rgb(26, 30, 39)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:166"
+      ]
+    },
+    {
+      "value": "#1f2632",
+      "type": "hex",
+      "rgb": "rgb(31, 38, 50)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:385"
+      ]
+    },
+    {
+      "value": "#202936",
+      "type": "hex",
+      "rgb": "rgb(32, 41, 54)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:296"
+      ]
+    },
+    {
+      "value": "#222",
+      "type": "hex",
+      "rgb": "rgb(34, 34, 34)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:33"
+      ]
+    },
+    {
+      "value": "#242f3f",
+      "type": "hex",
+      "rgb": "rgb(36, 47, 63)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:246"
+      ]
+    },
+    {
+      "value": "#2f3f55",
+      "type": "hex",
+      "rgb": "rgb(47, 63, 85)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:218"
+      ]
+    },
+    {
+      "value": "#2f5f42",
+      "type": "hex",
+      "rgb": "rgb(47, 95, 66)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:352"
+      ]
+    },
+    {
+      "value": "#2f7b4f",
+      "type": "hex",
+      "rgb": "rgb(47, 123, 79)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:304"
+      ]
+    },
+    {
+      "value": "#32d17c",
+      "type": "hex",
+      "rgb": "rgb(50, 209, 124)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:18"
+      ]
+    },
+    {
+      "value": "#3f4d63",
+      "type": "hex",
+      "rgb": "rgb(63, 77, 99)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:295"
+      ]
+    },
+    {
+      "value": "#4d6281",
+      "type": "hex",
+      "rgb": "rgb(77, 98, 129)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:219"
+      ]
+    },
+    {
+      "value": "#58b9ff",
+      "type": "hex",
+      "rgb": "rgb(88, 185, 255)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:21"
+      ]
+    },
+    {
+      "value": "#5aa9ff",
+      "type": "hex",
+      "rgb": "rgb(90, 169, 255)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:53"
+      ]
+    },
+    {
+      "value": "#7ce38b",
+      "type": "hex",
+      "rgb": "rgb(124, 227, 139)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:317"
+      ]
+    },
+    {
+      "value": "#7f1414",
+      "type": "hex",
+      "rgb": "rgb(127, 20, 20)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:256"
+      ]
+    },
+    {
+      "value": "#82c1ff",
+      "type": "hex",
+      "rgb": "rgb(130, 193, 255)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:57"
+      ]
+    },
+    {
+      "value": "#874f1d",
+      "type": "hex",
+      "rgb": "rgb(135, 79, 29)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:362"
+      ]
+    },
+    {
+      "value": "#999",
+      "type": "hex",
+      "rgb": "rgb(153, 153, 153)",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:55"
+      ]
+    },
+    {
+      "value": "#9b1c1c",
+      "type": "hex",
+      "rgb": "rgb(155, 28, 28)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:251"
+      ]
+    },
+    {
+      "value": "#9b3d3d",
+      "type": "hex",
+      "rgb": "rgb(155, 61, 61)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:310"
+      ]
+    },
+    {
+      "value": "#9dccff",
+      "type": "hex",
+      "rgb": "rgb(157, 204, 255)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:323"
+      ]
+    },
+    {
+      "value": "#b4f5d0",
+      "type": "hex",
+      "rgb": "rgb(180, 245, 208)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:146"
+      ]
+    },
+    {
+      "value": "#b6ff34",
+      "type": "hex",
+      "rgb": "rgb(182, 255, 52)",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:13"
+      ]
+    },
+    {
+      "value": "#b9f2d0",
+      "type": "hex",
+      "rgb": "rgb(185, 242, 208)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:306"
+      ]
+    },
+    {
+      "value": "#bbf7cd",
+      "type": "hex",
+      "rgb": "rgb(187, 247, 205)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:354"
+      ]
+    },
+    {
+      "value": "#bdbdbd",
+      "type": "hex",
+      "rgb": "rgb(189, 189, 189)",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:14"
+      ]
+    },
+    {
+      "value": "#c8d7eb",
+      "type": "hex",
+      "rgb": "rgb(200, 215, 235)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:297"
+      ]
+    },
+    {
+      "value": "#d7deea",
+      "type": "hex",
+      "rgb": "rgb(215, 222, 234)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:427"
+      ]
+    },
+    {
+      "value": "#f0f3f8",
+      "type": "hex",
+      "rgb": "rgb(240, 243, 248)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:5"
+      ]
+    },
+    {
+      "value": "#ff5d5d",
+      "type": "hex",
+      "rgb": "rgb(255, 93, 93)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:20"
+      ]
+    },
+    {
+      "value": "#ff8229",
+      "type": "hex",
+      "rgb": "rgb(255, 130, 41)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:17"
+      ]
+    },
+    {
+      "value": "#ffb020",
+      "type": "hex",
+      "rgb": "rgb(255, 176, 32)",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:19"
+      ]
+    },
+    {
+      "value": "#ffc1c1",
+      "type": "hex",
+      "rgb": "rgb(255, 193, 193)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:312"
+      ]
+    },
+    {
+      "value": "#ffd698",
+      "type": "hex",
+      "rgb": "rgb(255, 214, 152)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:140"
+      ]
+    },
+    {
+      "value": "#ffdcb6",
+      "type": "hex",
+      "rgb": "rgb(255, 220, 182)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:364"
+      ]
+    },
+    {
+      "value": "#ffe7e7",
+      "type": "hex",
+      "rgb": "rgb(255, 231, 231)",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:111"
+      ]
+    },
+    {
+      "value": "rgba(0, 0, 0, 0.55)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:376"
+      ]
+    },
+    {
+      "value": "rgba(0,0,0,0.25)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:71"
+      ]
+    },
+    {
+      "value": "rgba(0,0,0,0.3)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar_working_2025-08-21.jsx:84"
+      ]
+    },
+    {
+      "value": "rgba(0,0,0,0.4)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:151"
+      ]
+    },
+    {
+      "value": "rgba(10, 14, 20, 0.6)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:339"
+      ]
+    },
+    {
+      "value": "rgba(10, 14, 20, 0.7)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:517"
+      ]
+    },
+    {
+      "value": "rgba(103, 56, 16, 0.32)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:363"
+      ]
+    },
+    {
+      "value": "rgba(12, 16, 23, 0.8)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:450"
+      ]
+    },
+    {
+      "value": "rgba(12, 16, 23, 0.85)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:54"
+      ]
+    },
+    {
+      "value": "rgba(12, 16, 23, 0.9)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:9"
+      ]
+    },
+    {
+      "value": "rgba(120, 26, 26, 0.45)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:311"
+      ]
+    },
+    {
+      "value": "rgba(125, 136, 154, 0.55)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:425"
+      ]
+    },
+    {
+      "value": "rgba(17, 68, 39, 0.65)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:353"
+      ]
+    },
+    {
+      "value": "rgba(183, 33, 33, 0.95)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:110"
+      ]
+    },
+    {
+      "value": "rgba(207, 47, 47, 0.95)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:115"
+      ]
+    },
+    {
+      "value": "rgba(25, 83, 50, 0.45)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:305"
+      ]
+    },
+    {
+      "value": "rgba(255, 106, 0, 0.18)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:40"
+      ]
+    },
+    {
+      "value": "rgba(255, 106, 0, 0.65)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:39"
+      ]
+    },
+    {
+      "value": "rgba(255, 176, 32, 0.2)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:138"
+      ]
+    },
+    {
+      "value": "rgba(255, 176, 32, 0.6)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:139"
+      ]
+    },
+    {
+      "value": "rgba(255, 255, 255, 0.06)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:35"
+      ]
+    },
+    {
+      "value": "rgba(41, 50, 64, 0.95)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:100"
+      ]
+    },
+    {
+      "value": "rgba(43, 50, 63, 0.95)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:468"
+      ]
+    },
+    {
+      "value": "rgba(50, 209, 124, 0.2)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:144"
+      ]
+    },
+    {
+      "value": "rgba(50, 209, 124, 0.6)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:145"
+      ]
+    },
+    {
+      "value": "rgba(8, 12, 19, 0.64)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/index.css:7"
+      ]
+    },
+    {
+      "value": "rgba(86, 98, 118, 0.28)",
+      "type": "function",
+      "rgb": "n/a",
+      "usage_count": 1,
+      "references": [
+        "src/App.css:424"
+      ]
+    }
+  ],
+  "typography": {
+    "properties": {
+      "font-family": [
+        {
+          "value": "inherit",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:100"
+          ]
+        },
+        {
+          "value": "system-ui, Avenir, Helvetica, Arial, sans-serif",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:35"
+          ]
+        },
+        {
+          "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:526"
+          ]
+        }
+      ],
+      "font-size": [
+        {
+          "value": "0.85rem",
+          "usage_count": 5,
+          "references": [
+            "src/App.css:81",
+            "src/App.css:318",
+            "src/App.css:324",
+            "src/App.css:330",
+            "src/App.css:472"
+          ]
+        },
+        {
+          "value": "0.72rem",
+          "usage_count": 2,
+          "references": [
+            "src/App.css:217",
+            "src/App.css:429"
+          ]
+        },
+        {
+          "value": "0.82rem",
+          "usage_count": 2,
+          "references": [
+            "src/App.css:231",
+            "src/App.css:552"
+          ]
+        },
+        {
+          "value": "0.9rem",
+          "usage_count": 2,
+          "references": [
+            "src/App.css:357",
+            "src/App.css:445"
+          ]
+        },
+        {
+          "value": ".96rem",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:185"
+          ]
+        },
+        {
+          "value": "0.75rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:133"
+          ]
+        },
+        {
+          "value": "0.76rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:299"
+          ]
+        },
+        {
+          "value": "0.8rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:488"
+          ]
+        },
+        {
+          "value": "0.92rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:512"
+          ]
+        },
+        {
+          "value": "0.95rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:86"
+          ]
+        },
+        {
+          "value": "1.05rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:213"
+          ]
+        },
+        {
+          "value": "1.08rem",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:181"
+          ]
+        },
+        {
+          "value": "1.12rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:585"
+          ]
+        },
+        {
+          "value": "1.2rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:15"
+          ]
+        },
+        {
+          "value": "1em",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:98"
+          ]
+        },
+        {
+          "value": "2rem",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:166"
+          ]
+        },
+        {
+          "value": "3.2em",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:88"
+          ]
+        }
+      ],
+      "font-weight": [
+        {
+          "value": "600",
+          "usage_count": 3,
+          "references": [
+            "src/App.css:75",
+            "src/App.css:473",
+            "src/index.css:99"
+          ]
+        },
+        {
+          "value": "400",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:37"
+          ]
+        },
+        {
+          "value": "500",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:52"
+          ]
+        },
+        {
+          "value": "700",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:430"
+          ]
+        }
+      ],
+      "letter-spacing": [],
+      "line-height": [
+        {
+          "value": "1",
+          "usage_count": 1,
+          "references": [
+            "src/App.css:76"
+          ]
+        },
+        {
+          "value": "1.1",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:89"
+          ]
+        },
+        {
+          "value": "1.5",
+          "usage_count": 1,
+          "references": [
+            "src/index.css:36"
+          ]
+        }
+      ]
+    },
+    "computed_styles": "NOT RUN (static repository scan only)"
+  },
+  "spacing": {
+    "css_variable_tokens": [
+      {
+        "name": "--space-1",
+        "value": "0.25rem",
+        "definition_refs": [
+          "src/index.css:25"
+        ],
+        "usage_count": 0
+      },
+      {
+        "name": "--space-2",
+        "value": "0.5rem",
+        "definition_refs": [
+          "src/index.css:26"
+        ],
+        "usage_count": 10
+      },
+      {
+        "name": "--space-3",
+        "value": "0.75rem",
+        "definition_refs": [
+          "src/index.css:27"
+        ],
+        "usage_count": 11
+      },
+      {
+        "name": "--space-4",
+        "value": "1rem",
+        "definition_refs": [
+          "src/index.css:28"
+        ],
+        "usage_count": 10
+      },
+      {
+        "name": "--space-5",
+        "value": "1.5rem",
+        "definition_refs": [
+          "src/index.css:29"
+        ],
+        "usage_count": 2
+      },
+      {
+        "name": "--space-6",
+        "value": "2rem",
+        "definition_refs": [
+          "src/index.css:30"
+        ],
+        "usage_count": 0
+      }
+    ],
+    "common_values": [
+      {
+        "value": "0",
+        "usage_count": 23,
+        "references": [
+          "src/App.css:14",
+          "src/App.css:157",
+          "src/App.css:165",
+          "src/App.css:212",
+          "src/App.css:242",
+          "src/App.css:273",
+          "src/App.css:278",
+          "src/App.css:288",
+          "src/App.css:334",
+          "src/App.css:370",
+          "src/App.css:375",
+          "src/App.css:413",
+          "src/App.css:464",
+          "src/App.css:553",
+          "src/App.css:558",
+          "src/App.css:559",
+          "src/App.css:563",
+          "src/App.css:586",
+          "src/index.css:65",
+          "src/index.css:75",
+          "src/index.css:119",
+          "src/index.css:180",
+          "src/index.css:184"
+        ]
+      },
+      {
+        "value": "0.5rem",
+        "usage_count": 8,
+        "references": [
+          "src/App.css:208",
+          "src/App.css:221",
+          "src/App.css:236",
+          "src/App.css:274",
+          "src/App.css:284",
+          "src/App.css:300",
+          "src/App.css:346",
+          "src/App.css:542"
+        ]
+      },
+      {
+        "value": "1rem",
+        "usage_count": 8,
+        "references": [
+          "src/App.css:87",
+          "src/App.css:178",
+          "src/App.css:179",
+          "src/App.css:186",
+          "src/App.css:189",
+          "src/App.css:193",
+          "src/App.css:388",
+          "src/App.css:558"
+        ]
+      },
+      {
+        "value": "0.4rem",
+        "usage_count": 4,
+        "references": [
+          "src/App.css:290",
+          "src/App.css:322",
+          "src/App.css:328",
+          "src/App.css:513"
+        ]
+      },
+      {
+        "value": "0.75rem",
+        "usage_count": 4,
+        "references": [
+          "src/App.css:82",
+          "src/App.css:261",
+          "src/App.css:334",
+          "src/App.css:366"
+        ]
+      },
+      {
+        "value": "0.35rem",
+        "usage_count": 3,
+        "references": [
+          "src/App.css:278",
+          "src/App.css:370",
+          "src/App.css:558"
+        ]
+      },
+      {
+        "value": "0.45rem",
+        "usage_count": 3,
+        "references": [
+          "src/App.css:288",
+          "src/App.css:474",
+          "src/App.css:554"
+        ]
+      },
+      {
+        "value": "0.55rem",
+        "usage_count": 3,
+        "references": [
+          "src/App.css:134",
+          "src/App.css:356",
+          "src/App.css:522"
+        ]
+      },
+      {
+        "value": "0.6rem",
+        "usage_count": 3,
+        "references": [
+          "src/App.css:316",
+          "src/App.css:366",
+          "src/App.css:455"
+        ]
+      },
+      {
+        "value": "0.9rem",
+        "usage_count": 3,
+        "references": [
+          "src/App.css:268",
+          "src/App.css:361",
+          "src/App.css:474"
+        ]
+      },
+      {
+        "value": "0.12rem",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:134",
+          "src/App.css:300"
+        ]
+      },
+      {
+        "value": "0.2rem",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:288",
+          "src/App.css:554"
+        ]
+      },
+      {
+        "value": "0.65rem",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:340",
+          "src/App.css:522"
+        ]
+      },
+      {
+        "value": "0.7rem",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:356",
+          "src/App.css:455"
+        ]
+      },
+      {
+        "value": "0.8rem",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:282",
+          "src/App.css:351"
+        ]
+      },
+      {
+        "value": "12px",
+        "usage_count": 2,
+        "references": [
+          "src/index.css:152",
+          "src/index.css:171"
+        ]
+      },
+      {
+        "value": "18px",
+        "usage_count": 2,
+        "references": [
+          "src/index.css:131",
+          "src/index.css:152"
+        ]
+      },
+      {
+        "value": "0.15rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:221"
+        ]
+      },
+      {
+        "value": "0.1rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:558"
+        ]
+      },
+      {
+        "value": "0.22rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:563"
+        ]
+      },
+      {
+        "value": "0.38rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:542"
+        ]
+      },
+      {
+        "value": "0.42rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:82"
+        ]
+      },
+      {
+        "value": "0.62rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:87"
+        ]
+      },
+      {
+        "value": "0.6em",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:97"
+        ]
+      },
+      {
+        "value": "1.2em",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:97"
+        ]
+      },
+      {
+        "value": "1.5rem",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:158"
+        ]
+      },
+      {
+        "value": "14px",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:152"
+        ]
+      },
+      {
+        "value": "22px",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:193"
+        ]
+      },
+      {
+        "value": "28px",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:124"
+        ]
+      },
+      {
+        "value": "32px",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:119"
+        ]
+      },
+      {
+        "value": "6px",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:180"
+        ]
+      }
+    ]
+  },
+  "radii": {
+    "css_variable_tokens": [
+      {
+        "name": "--radius-1",
+        "value": "8px",
+        "definition_refs": [
+          "src/index.css:22"
+        ],
+        "usage_count": 4
+      },
+      {
+        "name": "--radius-2",
+        "value": "12px",
+        "definition_refs": [
+          "src/index.css:23"
+        ],
+        "usage_count": 2
+      },
+      {
+        "name": "--radius-3",
+        "value": "16px",
+        "definition_refs": [
+          "src/index.css:24"
+        ],
+        "usage_count": 0
+      }
+    ],
+    "common_values": [
+      {
+        "value": "8px",
+        "usage_count": 6,
+        "references": [
+          "src/App.css:338",
+          "src/App.css:355",
+          "src/App.css:365",
+          "src/index.css:95",
+          "src/index.css:150",
+          "src/index.css:167"
+        ]
+      },
+      {
+        "value": "10px",
+        "usage_count": 5,
+        "references": [
+          "src/App.css:182",
+          "src/App.css:195",
+          "src/App.css:267",
+          "src/App.css:387",
+          "src/index.css:122"
+        ]
+      },
+      {
+        "value": "999px",
+        "usage_count": 5,
+        "references": [
+          "src/App.css:131",
+          "src/App.css:220",
+          "src/App.css:298",
+          "src/App.css:426",
+          "src/App.css:470"
+        ]
+      },
+      {
+        "value": "var(--radius-1)",
+        "usage_count": 4,
+        "references": [
+          "src/App.css:27",
+          "src/App.css:70",
+          "src/App.css:452",
+          "src/App.css:519"
+        ]
+      },
+      {
+        "value": "var(--radius-2)",
+        "usage_count": 2,
+        "references": [
+          "src/App.css:400",
+          "src/App.css:493"
+        ]
+      },
+      {
+        "value": "12px",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:161"
+        ]
+      },
+      {
+        "value": "6px",
+        "usage_count": 1,
+        "references": [
+          "src/App.css:549"
+        ]
+      }
+    ]
+  },
+  "shadows": {
+    "css_variable_tokens": [],
+    "common_values": [
+      {
+        "value": "0 2px 8px rgba(0,0,0,0.4)",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:151"
+        ]
+      },
+      {
+        "value": "0 4px 15px rgba(0,0,0,0.5)",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:123"
+        ]
+      },
+      {
+        "value": "0 4px 16px rgba(0,0,0,0.5)",
+        "usage_count": 1,
+        "references": [
+          "src/index.css:161"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "file": "src/components/AgentConsole.jsx",
+      "file_stem": "AgentConsole",
+      "exported_names": [
+        "AgentConsole"
+      ],
+      "usage_count": 1,
+      "usage_references": [
+        "src/App_working_2025-08-21.jsx:185"
+      ]
+    },
+    {
+      "file": "src/components/ExecutionHistoryHarness.jsx",
+      "file_stem": "ExecutionHistoryHarness",
+      "exported_names": [
+        "ExecutionHistoryHarness"
+      ],
+      "usage_count": 0,
+      "usage_references": []
+    },
+    {
+      "file": "src/components/ExecutionHistoryPanel.jsx",
+      "file_stem": "ExecutionHistoryPanel",
+      "exported_names": [
+        "ExecutionHistoryPanel"
+      ],
+      "usage_count": 2,
+      "usage_references": [
+        "src/components/ExecutionHistoryHarness.jsx:49",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:567"
+      ]
+    },
+    {
+      "file": "src/components/IntegrationBar.jsx",
+      "file_stem": "IntegrationBar",
+      "exported_names": [
+        "IntegrationBar"
+      ],
+      "usage_count": 1,
+      "usage_references": [
+        "src/App_working_2025-08-21.jsx:209"
+      ]
+    },
+    {
+      "file": "src/components/IntegrationBar_working_2025-08-21.jsx",
+      "file_stem": "IntegrationBar_working_2025-08-21",
+      "exported_names": [
+        "IntegrationBar"
+      ],
+      "usage_count": 1,
+      "usage_references": [
+        "src/App_working_2025-08-21.jsx:209"
+      ]
+    },
+    {
+      "file": "src/components/OperatorGrid.jsx",
+      "file_stem": "OperatorGrid",
+      "exported_names": [
+        "OperatorGrid"
+      ],
+      "usage_count": 1,
+      "usage_references": [
+        "src/pages/Welcome.jsx:79"
+      ]
+    },
+    {
+      "file": "src/components/ProposalCards.jsx",
+      "file_stem": "ProposalCards",
+      "exported_names": [
+        "ProposalCards"
+      ],
+      "usage_count": 5,
+      "usage_references": [
+        "src/components/ProposalCardsHarness.jsx:32",
+        "src/components/ProposalDrawerFetchHarness.jsx:51",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:490",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:504",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:518"
+      ]
+    },
+    {
+      "file": "src/components/ProposalCardsHarness.jsx",
+      "file_stem": "ProposalCardsHarness",
+      "exported_names": [
+        "ProposalCardsHarness"
+      ],
+      "usage_count": 0,
+      "usage_references": []
+    },
+    {
+      "file": "src/components/ProposalDrawerFetchHarness.jsx",
+      "file_stem": "ProposalDrawerFetchHarness",
+      "exported_names": [
+        "ProposalDrawerFetchHarness"
+      ],
+      "usage_count": 0,
+      "usage_references": []
+    }
+  ],
+  "class_names": [
+    {
+      "class_name": "muted",
+      "usage_count": 39,
+      "references": [
+        "src/components/ExecutionHistoryHarness.jsx:48",
+        "src/components/ExecutionHistoryPanel.jsx:181",
+        "src/components/ExecutionHistoryPanel.jsx:184",
+        "src/components/ExecutionHistoryPanel.jsx:233",
+        "src/components/ExecutionHistoryPanel.jsx:241",
+        "src/components/OperatorGrid.jsx:93",
+        "src/components/ProposalCards.jsx:319",
+        "src/components/ProposalCards.jsx:454",
+        "src/components/ProposalCards.jsx:455",
+        "src/components/ProposalCards.jsx:547",
+        "src/components/ProposalCards.jsx:550",
+        "src/components/ProposalCards.jsx:552",
+        "src/components/ProposalCards.jsx:559",
+        "src/components/ProposalCards.jsx:573",
+        "src/components/ProposalCardsHarness.jsx:31",
+        "src/components/ProposalDrawerFetchHarness.jsx:47",
+        "src/components/ProposalDrawerFetchHarness.jsx:50",
+        "src/layouts/AppShell.jsx:81",
+        "src/layouts/AppShell.jsx:82",
+        "src/pages/BrandGuidelines.jsx:20",
+        "src/pages/BrandGuidelines.jsx:79",
+        "src/pages/Connectors.jsx:113",
+        "src/pages/Connectors.jsx:116",
+        "src/pages/Connectors.jsx:118",
+        "src/pages/Connectors.jsx:134",
+        "src/pages/Connectors.jsx:136",
+        "src/pages/Connectors.jsx:150",
+        "src/pages/Connectors.jsx:173",
+        "src/pages/Settings.jsx:8",
+        "src/pages/Settings.jsx:13",
+        "src/pages/Welcome.jsx:76",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:453",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:455",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:462",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:463",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:464",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:483",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:72",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:98"
+      ]
+    },
+    {
+      "class_name": "panel-block",
+      "usage_count": 20,
+      "references": [
+        "src/components/ExecutionHistoryHarness.jsx:46",
+        "src/components/ExecutionHistoryPanel.jsx:156",
+        "src/components/ProposalCardsHarness.jsx:29",
+        "src/components/ProposalDrawerFetchHarness.jsx:45",
+        "src/pages/BrandGuidelines.jsx:23",
+        "src/pages/BrandGuidelines.jsx:32",
+        "src/pages/BrandGuidelines.jsx:77",
+        "src/pages/BrandGuidelines.jsx:87",
+        "src/pages/BrandGuidelines.jsx:96",
+        "src/pages/BrandGuidelines.jsx:122",
+        "src/pages/Settings.jsx:11",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:468",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:481",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:488",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:502",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:516",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:529",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:543",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:570",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:75"
+      ]
+    },
+    {
+      "class_name": "button-row",
+      "usage_count": 11,
+      "references": [
+        "src/components/ExecutionHistoryPanel.jsx:158",
+        "src/components/ProposalCards.jsx:530",
+        "src/components/ProposalCards.jsx:576",
+        "src/pages/Connectors.jsx:139",
+        "src/pages/Connectors.jsx:174",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:470",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:537",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:552",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:572",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:77",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:99"
+      ]
+    },
+    {
+      "class_name": "error",
+      "usage_count": 9,
+      "references": [
+        "src/App_working_2025-08-21.jsx:200",
+        "src/App_working_2025-08-21.jsx:203",
+        "src/App_working_2025-08-21.jsx:234",
+        "src/components/AgentConsole.jsx:90",
+        "src/components/ExecutionHistoryPanel.jsx:182",
+        "src/pages/Welcome.jsx:78",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:580",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:583",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:92"
+      ]
+    },
+    {
+      "class_name": "app-shell",
+      "usage_count": 6,
+      "references": [
+        "src/pages/BrandGuidelines.jsx:17",
+        "src/pages/Connectors.jsx:110",
+        "src/pages/Settings.jsx:5",
+        "src/pages/Welcome.jsx:73",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:450",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:69"
+      ]
+    },
+    {
+      "class_name": "btn-secondary",
+      "usage_count": 6,
+      "references": [
+        "src/components/ProposalCards.jsx:464",
+        "src/components/ProposalCards.jsx:480",
+        "src/components/ProposalCards.jsx:531",
+        "src/components/ProposalCards.jsx:577",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:573",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:100"
+      ]
+    },
+    {
+      "class_name": "data-block",
+      "usage_count": 6,
+      "references": [
+        "src/components/AgentConsole.jsx:116",
+        "src/components/ProposalCards.jsx:510",
+        "src/components/ProposalCards.jsx:536",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:477",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:563",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:579"
+      ]
+    },
+    {
+      "class_name": "badge",
+      "usage_count": 4,
+      "references": [
+        "src/layouts/AppShell.jsx:80",
+        "src/pages/Connectors.jsx:129",
+        "src/pages/Connectors.jsx:161",
+        "src/pages/Connectors.jsx:171"
+      ]
+    },
+    {
+      "class_name": "btn",
+      "usage_count": 4,
+      "references": [
+        "src/App_working_2025-08-21.jsx:310",
+        "src/components/AgentConsole.jsx:85",
+        "src/pages/Connectors.jsx:142",
+        "src/pages/Connectors.jsx:175"
+      ]
+    },
+    {
+      "class_name": "chip",
+      "usage_count": 4,
+      "references": [
+        "src/components/ProposalCards.jsx:447",
+        "src/components/ProposalCards.jsx:448",
+        "src/components/ProposalCards.jsx:449",
+        "src/components/ProposalCards.jsx:450"
+      ]
+    },
+    {
+      "class_name": "console-table",
+      "usage_count": 4,
+      "references": [
+        "src/components/AgentConsole.jsx:94",
+        "src/components/ExecutionHistoryPanel.jsx:189",
+        "src/pages/BrandGuidelines.jsx:38",
+        "src/pages/BrandGuidelines.jsx:99"
+      ]
+    },
+    {
+      "class_name": "proposal-error",
+      "usage_count": 4,
+      "references": [
+        "src/components/ProposalCards.jsx:459",
+        "src/components/ProposalCards.jsx:507",
+        "src/components/ProposalCards.jsx:525",
+        "src/components/ProposalCards.jsx:548"
+      ]
+    },
+    {
+      "class_name": "table-wrap",
+      "usage_count": 4,
+      "references": [
+        "src/components/AgentConsole.jsx:93",
+        "src/components/ExecutionHistoryPanel.jsx:188",
+        "src/pages/BrandGuidelines.jsx:37",
+        "src/pages/BrandGuidelines.jsx:98"
+      ]
+    },
+    {
+      "class_name": "console-input",
+      "usage_count": 3,
+      "references": [
+        "src/components/AgentConsole.jsx:45",
+        "src/components/AgentConsole.jsx:59",
+        "src/components/AgentConsole.jsx:69"
+      ]
+    },
+    {
+      "class_name": "console-label",
+      "usage_count": 3,
+      "references": [
+        "src/components/AgentConsole.jsx:43",
+        "src/components/AgentConsole.jsx:57",
+        "src/components/AgentConsole.jsx:67"
+      ]
+    },
+    {
+      "class_name": "console-row",
+      "usage_count": 3,
+      "references": [
+        "src/components/AgentConsole.jsx:42",
+        "src/components/AgentConsole.jsx:56",
+        "src/components/AgentConsole.jsx:66"
+      ]
+    },
+    {
+      "class_name": "rounded",
+      "usage_count": 3,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:26",
+        "src/pages/_legacy/AgentConsole_legacy.jsx:34",
+        "src/pages/_legacy/AgentConsole_legacy.jsx:40"
+      ]
+    },
+    {
+      "class_name": "api-alert",
+      "usage_count": 2,
+      "references": [
+        "src/pages/BrandGuidelines.jsx:124",
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:459"
+      ]
+    },
+    {
+      "class_name": "badge--muted",
+      "usage_count": 2,
+      "references": [
+        "src/pages/Connectors.jsx:161",
+        "src/pages/Connectors.jsx:171"
+      ]
+    },
+    {
+      "class_name": "btn--primary",
+      "usage_count": 2,
+      "references": [
+        "src/components/AgentConsole.jsx:85",
+        "src/pages/Connectors.jsx:142"
+      ]
+    },
+    {
+      "class_name": "btn--sm",
+      "usage_count": 2,
+      "references": [
+        "src/pages/Connectors.jsx:142",
+        "src/pages/Connectors.jsx:175"
+      ]
+    },
+    {
+      "class_name": "btn-danger",
+      "usage_count": 2,
+      "references": [
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:83",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:103"
+      ]
+    },
+    {
+      "class_name": "connector-card",
+      "usage_count": 2,
+      "references": [
+        "src/pages/Connectors.jsx:126",
+        "src/pages/Connectors.jsx:165"
+      ]
+    },
+    {
+      "class_name": "connector-card__head",
+      "usage_count": 2,
+      "references": [
+        "src/pages/Connectors.jsx:127",
+        "src/pages/Connectors.jsx:166"
+      ]
+    },
+    {
+      "class_name": "connector-grid",
+      "usage_count": 2,
+      "references": [
+        "src/pages/Connectors.jsx:120",
+        "src/pages/Connectors.jsx:163"
+      ]
+    },
+    {
+      "class_name": "history-proposal-btn",
+      "usage_count": 2,
+      "references": [
+        "src/components/ExecutionHistoryPanel.jsx:218",
+        "src/components/ProposalCards.jsx:439"
+      ]
+    },
+    {
+      "class_name": "history-timeline",
+      "usage_count": 2,
+      "references": [
+        "src/components/ExecutionHistoryPanel.jsx:235",
+        "src/components/ProposalCards.jsx:554"
+      ]
+    },
+    {
+      "class_name": "modal-backdrop",
+      "usage_count": 2,
+      "references": [
+        "src/components/ProposalCards.jsx:518",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:95"
+      ]
+    },
+    {
+      "class_name": "modal-card",
+      "usage_count": 2,
+      "references": [
+        "src/components/ProposalCards.jsx:519",
+        "src/pages/operators/ExecutiveAssistantOnboarding.jsx:96"
+      ]
+    },
+    {
+      "class_name": "operator-badge",
+      "usage_count": 2,
+      "references": [
+        "src/components/OperatorGrid.jsx:85",
+        "src/components/OperatorGrid.jsx:89"
+      ]
+    },
+    {
+      "class_name": "p-2",
+      "usage_count": 2,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:26",
+        "src/pages/_legacy/AgentConsole_legacy.jsx:34"
+      ]
+    },
+    {
+      "class_name": "proposal-result",
+      "usage_count": 2,
+      "references": [
+        "src/components/ProposalCards.jsx:496",
+        "src/components/ProposalCards.jsx:501"
+      ]
+    },
+    {
+      "class_name": "text-white",
+      "usage_count": 2,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:34",
+        "src/pages/_legacy/AgentConsole_legacy.jsx:40"
+      ]
+    },
+    {
+      "class_name": "badge--warning",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:80"
+      ]
+    },
+    {
+      "class_name": "badge-row",
+      "usage_count": 1,
+      "references": [
+        "src/components/ProposalCards.jsx:446"
+      ]
+    },
+    {
+      "class_name": "bg-gray-800",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:26"
+      ]
+    },
+    {
+      "class_name": "bg-gray-900",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:34"
+      ]
+    },
+    {
+      "class_name": "bg-red-600",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:40"
+      ]
+    },
+    {
+      "class_name": "brand-logo",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:193"
+      ]
+    },
+    {
+      "class_name": "brandbar",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:188"
+      ]
+    },
+    {
+      "class_name": "brandbar--in-panel",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:188"
+      ]
+    },
+    {
+      "class_name": "btn--md",
+      "usage_count": 1,
+      "references": [
+        "src/components/AgentConsole.jsx:85"
+      ]
+    },
+    {
+      "class_name": "btn--secondary",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:175"
+      ]
+    },
+    {
+      "class_name": "btn-row",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:309"
+      ]
+    },
+    {
+      "class_name": "connector-card--placeholder",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:165"
+      ]
+    },
+    {
+      "class_name": "connector-group",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:158"
+      ]
+    },
+    {
+      "class_name": "connector-group__head",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:159"
+      ]
+    },
+    {
+      "class_name": "connector-icon",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:168"
+      ]
+    },
+    {
+      "class_name": "connector-name",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:167"
+      ]
+    },
+    {
+      "class_name": "connector-placeholder-groups",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:156"
+      ]
+    },
+    {
+      "class_name": "console-card",
+      "usage_count": 1,
+      "references": [
+        "src/components/AgentConsole.jsx:40"
+      ]
+    },
+    {
+      "class_name": "console-grid",
+      "usage_count": 1,
+      "references": [
+        "src/components/AgentConsole.jsx:41"
+      ]
+    },
+    {
+      "class_name": "console-input--mono",
+      "usage_count": 1,
+      "references": [
+        "src/components/AgentConsole.jsx:69"
+      ]
+    },
+    {
+      "class_name": "error-text",
+      "usage_count": 1,
+      "references": [
+        "src/pages/Connectors.jsx:117"
+      ]
+    },
+    {
+      "class_name": "flex",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:32"
+      ]
+    },
+    {
+      "class_name": "flex-1",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:34"
+      ]
+    },
+    {
+      "class_name": "font-bold",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:23"
+      ]
+    },
+    {
+      "class_name": "gap-2",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:32"
+      ]
+    },
+    {
+      "class_name": "integration-bar",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar.jsx:43"
+      ]
+    },
+    {
+      "class_name": "integration-empty",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar.jsx:65"
+      ]
+    },
+    {
+      "class_name": "integration-pill",
+      "usage_count": 1,
+      "references": [
+        "src/components/IntegrationBar.jsx:52"
+      ]
+    },
+    {
+      "class_name": "mb-4",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:23"
+      ]
+    },
+    {
+      "class_name": "mt-4",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:32"
+      ]
+    },
+    {
+      "class_name": "operator-badge--locked",
+      "usage_count": 1,
+      "references": [
+        "src/components/OperatorGrid.jsx:89"
+      ]
+    },
+    {
+      "class_name": "operator-card__head",
+      "usage_count": 1,
+      "references": [
+        "src/components/OperatorGrid.jsx:82"
+      ]
+    },
+    {
+      "class_name": "operator-grid",
+      "usage_count": 1,
+      "references": [
+        "src/components/OperatorGrid.jsx:74"
+      ]
+    },
+    {
+      "class_name": "operator-sync",
+      "usage_count": 1,
+      "references": [
+        "src/components/OperatorGrid.jsx:93"
+      ]
+    },
+    {
+      "class_name": "p-4",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:22"
+      ]
+    },
+    {
+      "class_name": "page",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:187"
+      ]
+    },
+    {
+      "class_name": "panel",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:189"
+      ]
+    },
+    {
+      "class_name": "parsed-block",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:240"
+      ]
+    },
+    {
+      "class_name": "proposal-card",
+      "usage_count": 1,
+      "references": [
+        "src/components/ProposalCards.jsx:435"
+      ]
+    },
+    {
+      "class_name": "proposal-card__actions",
+      "usage_count": 1,
+      "references": [
+        "src/components/ProposalCards.jsx:461"
+      ]
+    },
+    {
+      "class_name": "proposal-grid",
+      "usage_count": 1,
+      "references": [
+        "src/components/ProposalCards.jsx:405"
+      ]
+    },
+    {
+      "class_name": "px-4",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:40"
+      ]
+    },
+    {
+      "class_name": "py-2",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:40"
+      ]
+    },
+    {
+      "class_name": "results",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:250"
+      ]
+    },
+    {
+      "class_name": "shell",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:58"
+      ]
+    },
+    {
+      "class_name": "shell__brand",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:60"
+      ]
+    },
+    {
+      "class_name": "shell__content",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:74"
+      ]
+    },
+    {
+      "class_name": "shell__main",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:85"
+      ]
+    },
+    {
+      "class_name": "shell__nav",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:61"
+      ]
+    },
+    {
+      "class_name": "shell__sidebar",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:59"
+      ]
+    },
+    {
+      "class_name": "shell__topbar",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:75"
+      ]
+    },
+    {
+      "class_name": "shell__topbar-right",
+      "usage_count": 1,
+      "references": [
+        "src/layouts/AppShell.jsx:79"
+      ]
+    },
+    {
+      "class_name": "space-y-2",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:24"
+      ]
+    },
+    {
+      "class_name": "sub",
+      "usage_count": 1,
+      "references": [
+        "src/App_working_2025-08-21.jsx:197"
+      ]
+    },
+    {
+      "class_name": "text-2xl",
+      "usage_count": 1,
+      "references": [
+        "src/pages/_legacy/AgentConsole_legacy.jsx:23"
+      ]
+    },
+    {
+      "class_name": "toast",
+      "usage_count": 1,
+      "references": [
+        "src/pages/operators/ExecutiveAssistantDashboard.jsx:457"
+      ]
+    }
+  ],
+  "lane_safety": {
+    "agent_endpoint_refs": [],
+    "ui_endpoint_refs": [
+      "src/lib/api.js:16",
+      "src/lib/api.js:17",
+      "src/lib/api.js:19",
+      "src/lib/api.js:20",
+      "src/lib/api.js:21",
+      "src/lib/api.js:22",
+      "src/lib/api.js:23",
+      "src/lib/secureFetch.js:63",
+      "src/lib/secureFetch.js:65",
+      "src/pages/BrandGuidelines.jsx:128",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:455",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:534"
+    ],
+    "credentials_include_refs": [
+      "src/App_working_2025-08-21.jsx:34",
+      "src/App_working_2025-08-21.jsx:63",
+      "src/App_working_2025-08-21.jsx:84",
+      "src/App_working_2025-08-21.jsx:100",
+      "src/App_working_2025-08-21.jsx:116",
+      "src/App_working_2025-08-21.jsx:159",
+      "src/components/IntegrationBar_working_2025-08-21.jsx:26",
+      "src/lib/secureFetch.js:97",
+      "src/pages/BrandGuidelines.jsx:125",
+      "src/pages/BrandGuidelines.jsx:129",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:455"
+    ]
+  },
+  "ux_mission_evidence": {
+    "cockpit_feel": [],
+    "lane_separation": [
+      "src/App_working_2025-08-21.jsx:110",
+      "src/App_working_2025-08-21.jsx:111",
+      "src/App_working_2025-08-21.jsx:118",
+      "src/components/AgentConsole.jsx:52",
+      "src/components/IntegrationBar.jsx:9",
+      "src/components/IntegrationBar_working_2025-08-21.jsx:6",
+      "src/pages/BrandGuidelines.jsx:123",
+      "src/pages/BrandGuidelines.jsx:125",
+      "src/pages/BrandGuidelines.jsx:127",
+      "src/pages/BrandGuidelines.jsx:128",
+      "src/pages/BrandGuidelines.jsx:129",
+      "src/pages/Connectors.jsx:17"
+    ],
+    "proposal_badges": [
+      "src/App.css:130",
+      "src/App.css:137",
+      "src/App.css:143",
+      "src/App.css:149",
+      "src/App.css:216",
+      "src/App.css:224",
+      "src/App.css:259",
+      "src/App.css:265",
+      "src/App.css:272",
+      "src/App.css:277",
+      "src/App.css:281",
+      "src/App.css:287",
+      "src/App.css:321",
+      "src/App.css:327",
+      "src/App.css:546",
+      "src/components/ExecutionHistoryHarness.jsx:5",
+      "src/components/ExecutionHistoryHarness.jsx:7",
+      "src/components/ExecutionHistoryHarness.jsx:13",
+      "src/components/ExecutionHistoryHarness.jsx:21",
+      "src/components/ExecutionHistoryHarness.jsx:29",
+      "src/components/ExecutionHistoryHarness.jsx:39",
+      "src/components/ExecutionHistoryHarness.jsx:40",
+      "src/components/ExecutionHistoryHarness.jsx:44",
+      "src/components/ExecutionHistoryPanel.jsx:4",
+      "src/components/ExecutionHistoryPanel.jsx:7",
+      "src/components/ExecutionHistoryPanel.jsx:43",
+      "src/components/ExecutionHistoryPanel.jsx:53",
+      "src/components/ExecutionHistoryPanel.jsx:60",
+      "src/components/ExecutionHistoryPanel.jsx:61",
+      "src/components/ExecutionHistoryPanel.jsx:109",
+      "src/components/ExecutionHistoryPanel.jsx:111",
+      "src/components/ExecutionHistoryPanel.jsx:112",
+      "src/components/ExecutionHistoryPanel.jsx:113",
+      "src/components/ExecutionHistoryPanel.jsx:117",
+      "src/components/ExecutionHistoryPanel.jsx:118",
+      "src/components/ExecutionHistoryPanel.jsx:122",
+      "src/components/ExecutionHistoryPanel.jsx:124",
+      "src/components/ExecutionHistoryPanel.jsx:125",
+      "src/components/ExecutionHistoryPanel.jsx:140",
+      "src/components/ExecutionHistoryPanel.jsx:142",
+      "src/components/ExecutionHistoryPanel.jsx:149",
+      "src/components/ExecutionHistoryPanel.jsx:150",
+      "src/components/ExecutionHistoryPanel.jsx:151",
+      "src/components/ExecutionHistoryPanel.jsx:153",
+      "src/components/ExecutionHistoryPanel.jsx:197",
+      "src/components/ExecutionHistoryPanel.jsx:202",
+      "src/components/ExecutionHistoryPanel.jsx:203",
+      "src/components/ExecutionHistoryPanel.jsx:204",
+      "src/components/ExecutionHistoryPanel.jsx:205",
+      "src/components/ExecutionHistoryPanel.jsx:215",
+      "src/components/ExecutionHistoryPanel.jsx:218",
+      "src/components/ExecutionHistoryPanel.jsx:219",
+      "src/components/ExecutionHistoryPanel.jsx:220",
+      "src/components/ExecutionHistoryPanel.jsx:222",
+      "src/components/ExecutionHistoryPanel.jsx:232",
+      "src/components/ExecutionHistoryPanel.jsx:238",
+      "src/components/OperatorGrid.jsx:5",
+      "src/components/OperatorGrid.jsx:85",
+      "src/components/OperatorGrid.jsx:89",
+      "src/components/ProposalCards.jsx:20",
+      "src/components/ProposalCards.jsx:23",
+      "src/components/ProposalCards.jsx:41",
+      "src/components/ProposalCards.jsx:43",
+      "src/components/ProposalCards.jsx:56",
+      "src/components/ProposalCards.jsx:59",
+      "src/components/ProposalCards.jsx:73",
+      "src/components/ProposalCards.jsx:74",
+      "src/components/ProposalCards.jsx:88",
+      "src/components/ProposalCards.jsx:90",
+      "src/components/ProposalCards.jsx:116",
+      "src/components/ProposalCards.jsx:117",
+      "src/components/ProposalCards.jsx:123",
+      "src/components/ProposalCards.jsx:124",
+      "src/components/ProposalCards.jsx:160",
+      "src/components/ProposalCards.jsx:162",
+      "src/components/ProposalCards.jsx:163",
+      "src/components/ProposalCards.jsx:164",
+      "src/components/ProposalCards.jsx:208",
+      "src/components/ProposalCards.jsx:258",
+      "src/components/ProposalCards.jsx:260",
+      "src/components/ProposalCards.jsx:266",
+      "src/components/ProposalCards.jsx:270",
+      "src/components/ProposalCards.jsx:271",
+      "src/components/ProposalCards.jsx:272",
+      "src/components/ProposalCards.jsx:273",
+      "src/components/ProposalCards.jsx:274",
+      "src/components/ProposalCards.jsx:298",
+      "src/components/ProposalCards.jsx:299",
+      "src/components/ProposalCards.jsx:305",
+      "src/components/ProposalCards.jsx:309",
+      "src/components/ProposalCards.jsx:311",
+      "src/components/ProposalCards.jsx:314",
+      "src/components/ProposalCards.jsx:315",
+      "src/components/ProposalCards.jsx:318",
+      "src/components/ProposalCards.jsx:319",
+      "src/components/ProposalCards.jsx:322",
+      "src/components/ProposalCards.jsx:323",
+      "src/components/ProposalCards.jsx:324",
+      "src/components/ProposalCards.jsx:325",
+      "src/components/ProposalCards.jsx:327",
+      "src/components/ProposalCards.jsx:330",
+      "src/components/ProposalCards.jsx:336",
+      "src/components/ProposalCards.jsx:337",
+      "src/components/ProposalCards.jsx:338",
+      "src/components/ProposalCards.jsx:339",
+      "src/components/ProposalCards.jsx:342",
+      "src/components/ProposalCards.jsx:343",
+      "src/components/ProposalCards.jsx:345",
+      "src/components/ProposalCards.jsx:348",
+      "src/components/ProposalCards.jsx:349",
+      "src/components/ProposalCards.jsx:359",
+      "src/components/ProposalCards.jsx:360",
+      "src/components/ProposalCards.jsx:361",
+      "src/components/ProposalCards.jsx:364",
+      "src/components/ProposalCards.jsx:368",
+      "src/components/ProposalCards.jsx:369",
+      "src/components/ProposalCards.jsx:373",
+      "src/components/ProposalCards.jsx:377",
+      "src/components/ProposalCards.jsx:387",
+      "src/components/ProposalCards.jsx:388",
+      "src/components/ProposalCards.jsx:392",
+      "src/components/ProposalCards.jsx:393",
+      "src/components/ProposalCards.jsx:396",
+      "src/components/ProposalCards.jsx:397",
+      "src/components/ProposalCards.jsx:405",
+      "src/components/ProposalCards.jsx:406",
+      "src/components/ProposalCards.jsx:407",
+      "src/components/ProposalCards.jsx:408",
+      "src/components/ProposalCards.jsx:409",
+      "src/components/ProposalCards.jsx:410",
+      "src/components/ProposalCards.jsx:411",
+      "src/components/ProposalCards.jsx:412",
+      "src/components/ProposalCards.jsx:413",
+      "src/components/ProposalCards.jsx:414",
+      "src/components/ProposalCards.jsx:415",
+      "src/components/ProposalCards.jsx:416",
+      "src/components/ProposalCards.jsx:417",
+      "src/components/ProposalCards.jsx:418",
+      "src/components/ProposalCards.jsx:419",
+      "src/components/ProposalCards.jsx:420",
+      "src/components/ProposalCards.jsx:421",
+      "src/components/ProposalCards.jsx:427",
+      "src/components/ProposalCards.jsx:435",
+      "src/components/ProposalCards.jsx:439",
+      "src/components/ProposalCards.jsx:440",
+      "src/components/ProposalCards.jsx:441",
+      "src/components/ProposalCards.jsx:446",
+      "src/components/ProposalCards.jsx:459",
+      "src/components/ProposalCards.jsx:461",
+      "src/components/ProposalCards.jsx:465",
+      "src/components/ProposalCards.jsx:466",
+      "src/components/ProposalCards.jsx:472",
+      "src/components/ProposalCards.jsx:476",
+      "src/components/ProposalCards.jsx:481",
+      "src/components/ProposalCards.jsx:482",
+      "src/components/ProposalCards.jsx:483",
+      "src/components/ProposalCards.jsx:490",
+      "src/components/ProposalCards.jsx:496",
+      "src/components/ProposalCards.jsx:501",
+      "src/components/ProposalCards.jsx:507",
+      "src/components/ProposalCards.jsx:517",
+      "src/components/ProposalCards.jsx:520",
+      "src/components/ProposalCards.jsx:521",
+      "src/components/ProposalCards.jsx:522",
+      "src/components/ProposalCards.jsx:523",
+      "src/components/ProposalCards.jsx:524",
+      "src/components/ProposalCards.jsx:525",
+      "src/components/ProposalCards.jsx:526",
+      "src/components/ProposalCards.jsx:538",
+      "src/components/ProposalCards.jsx:539",
+      "src/components/ProposalCards.jsx:540",
+      "src/components/ProposalCards.jsx:541",
+      "src/components/ProposalCards.jsx:547",
+      "src/components/ProposalCards.jsx:548",
+      "src/components/ProposalCards.jsx:549",
+      "src/components/ProposalCards.jsx:550",
+      "src/components/ProposalCards.jsx:556",
+      "src/components/ProposalCardsHarness.jsx:2",
+      "src/components/ProposalCardsHarness.jsx:4",
+      "src/components/ProposalCardsHarness.jsx:7",
+      "src/components/ProposalCardsHarness.jsx:16",
+      "src/components/ProposalCardsHarness.jsx:26",
+      "src/components/ProposalCardsHarness.jsx:30",
+      "src/components/ProposalCardsHarness.jsx:31",
+      "src/components/ProposalCardsHarness.jsx:32",
+      "src/components/ProposalCardsHarness.jsx:33",
+      "src/components/ProposalDrawerFetchHarness.jsx:2",
+      "src/components/ProposalDrawerFetchHarness.jsx:4",
+      "src/components/ProposalDrawerFetchHarness.jsx:6",
+      "src/components/ProposalDrawerFetchHarness.jsx:7",
+      "src/components/ProposalDrawerFetchHarness.jsx:13",
+      "src/components/ProposalDrawerFetchHarness.jsx:14",
+      "src/components/ProposalDrawerFetchHarness.jsx:17",
+      "src/components/ProposalDrawerFetchHarness.jsx:18",
+      "src/components/ProposalDrawerFetchHarness.jsx:20",
+      "src/components/ProposalDrawerFetchHarness.jsx:21",
+      "src/components/ProposalDrawerFetchHarness.jsx:32",
+      "src/components/ProposalDrawerFetchHarness.jsx:46",
+      "src/components/ProposalDrawerFetchHarness.jsx:48",
+      "src/components/ProposalDrawerFetchHarness.jsx:50",
+      "src/components/ProposalDrawerFetchHarness.jsx:51",
+      "src/components/ProposalDrawerFetchHarness.jsx:52",
+      "src/components/ProposalDrawerFetchHarness.jsx:58",
+      "src/layouts/AppShell.jsx:80",
+      "src/lib/api.js:18",
+      "src/lib/api.js:19",
+      "src/lib/api.js:21",
+      "src/lib/api.js:23",
+      "src/pages/Connectors.jsx:129",
+      "src/pages/Connectors.jsx:161",
+      "src/pages/Connectors.jsx:171",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:4",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:13",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:14",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:15",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:16",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:141",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:156",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:228",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:229",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:238",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:246",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:247",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:248",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:250",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:255",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:275",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:293",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:309",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:353",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:354",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:375",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:376",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:387",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:388",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:392",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:399",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:400",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:402",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:423",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:424",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:425",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:426",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:430",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:432",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:433",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:434",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:435",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:439",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:440",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:441",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:442",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:443",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:445",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:453",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:480",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:482",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:483",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:487",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:489",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:490",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:491",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:493",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:501",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:503",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:504",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:505",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:507",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:515",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:517",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:518",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:519",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:521",
+      "src/pages/operators/ExecutiveAssistantDashboard.jsx:567"
+    ],
+    "safe_mode_indicator": [
+      "src/layouts/AppShell.jsx:19",
+      "src/layouts/AppShell.jsx:40",
+      "src/layouts/AppShell.jsx:80",
+      "src/lib/integrations.js:35"
+    ]
+  }
+}

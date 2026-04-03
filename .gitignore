@@ -1,0 +1,13 @@
+# Local/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local backups and design source artifacts
+*.bak-*
+*.psd
+
+# Logs and temp
+*.log
+*.tmp
