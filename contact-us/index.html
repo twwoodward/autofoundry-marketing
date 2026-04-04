@@ -40,32 +40,39 @@
             <p>Believe it or not, there are actual humans behind AutoFoundry. We are here to listen to your goals and help you choose the right package of AI assistants to accomplish your business goals, whether you are a start-up in need of a team or an established company with hard-to-solve workflow problems. Fill out this form and a human will reach out to you. Promise!</p>
           </div>
 
-          <form class="card contact-form" action="mailto:sales@autofoundry.ai" method="post" enctype="text/plain">
+          <form class="card contact-form" id="contact-form" autocomplete="on">
             <label class="contact-field">
               <span>Name</span>
-              <input type="text" name="Name" required>
+              <input id="contact-name" type="text" name="name" autocomplete="name" required>
             </label>
             <label class="contact-field">
               <span>Company</span>
-              <input type="text" name="Company" required>
+              <input id="contact-company" type="text" name="company" autocomplete="organization" required>
             </label>
             <label class="contact-field">
               <span>Email</span>
-              <input type="email" name="Email" required>
+              <input id="contact-email" type="email" name="email" autocomplete="email" required>
             </label>
             <label class="contact-field">
               <span>Phone (optional)</span>
-              <input type="tel" name="Phone">
+              <input id="contact-phone" type="tel" name="phone" autocomplete="tel">
             </label>
 
             <label class="contact-field">
               <span>What are you trying to solve?</span>
-              <textarea name="What are you trying to solve" rows="5" required></textarea>
+              <textarea id="contact-problem" name="problem_to_solve" rows="5" autocomplete="on" required></textarea>
+            </label>
+
+            <input type="hidden" name="interest" value="General Inquiry">
+            <label class="contact-field contact-honeypot" aria-hidden="true">
+              <span>Website</span>
+              <input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off">
             </label>
 
             <div class="cta-row">
               <button class="btn btn-primary" type="submit">Submit</button>
             </div>
+            <p class="contact-form-status" role="status" aria-live="polite" data-form-status></p>
           </form>
         </section>
 
@@ -82,5 +89,68 @@
       <span>© AutoFoundry</span>
     </footer>
   </div>
+  <script>
+    (() => {
+      const form = document.getElementById("contact-form");
+      if (!form) return;
+
+      const status = form.querySelector("[data-form-status]");
+      const submitButton = form.querySelector("button[type='submit']");
+      const endpoint = "https://api.autofoundry.ai/v1/public/contact-us";
+
+      const setStatus = (state, message) => {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.remove("is-submitting", "is-success", "is-error");
+        if (state) status.classList.add(`is-${state}`);
+      };
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const payload = {
+          name: String(formData.get("name") || "").trim(),
+          company: String(formData.get("company") || "").trim(),
+          email: String(formData.get("email") || "").trim(),
+          phone: String(formData.get("phone") || "").trim(),
+          problem_to_solve: String(formData.get("problem_to_solve") || "").trim(),
+          interest: String(formData.get("interest") || "General Inquiry").trim(),
+          source_page: "/contact-us",
+          website: String(formData.get("website") || "").trim()
+        };
+
+        if (!payload.name || !payload.company || !payload.email || !payload.problem_to_solve) {
+          setStatus("error", "Please complete all required fields before submitting.");
+          return;
+        }
+
+        if (submitButton) submitButton.disabled = true;
+        setStatus("submitting", "Submitting...");
+
+        try {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) {
+            throw new Error(`Contact form request failed (${response.status})`);
+          }
+
+          form.reset();
+          setStatus("success", "Thanks. Your request has been sent.");
+        } catch (error) {
+          setStatus("error", "Something went wrong. Please try again.");
+        } finally {
+          if (submitButton) submitButton.disabled = false;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
