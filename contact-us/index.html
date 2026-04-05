@@ -63,7 +63,7 @@
               <textarea id="contact-problem" name="problem_to_solve" rows="5" autocomplete="on" required></textarea>
             </label>
 
-            <input type="hidden" name="interest" value="General Inquiry">
+            <input type="hidden" name="interest" value="both">
             <label class="contact-field contact-honeypot" aria-hidden="true">
               <span>Website</span>
               <input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off">
@@ -115,7 +115,7 @@
           email: String(formData.get("email") || "").trim(),
           phone: String(formData.get("phone") || "").trim(),
           problem_to_solve: String(formData.get("problem_to_solve") || "").trim(),
-          interest: String(formData.get("interest") || "General Inquiry").trim(),
+          interest: String(formData.get("interest") || "both").trim(),
           source_page: "/contact-us",
           website: String(formData.get("website") || "").trim()
         };
@@ -139,6 +139,8 @@
           });
 
           if (!response.ok) {
+            const errorText = await response.text();
+            console.error("Contact form request failed", response.status, errorText);
             throw new Error(`Contact form request failed (${response.status})`);
           }
 
